@@ -1,6 +1,14 @@
-
 /* DEMO SPECIFIC CSS*/
 
+@font-face {
+  font-family: 'ApfelGrotezk';
+  src: local('Apfel Grotezk'), url('ApfelGrotezk-Mittel.woff2');
+}
+
+@font-face {
+  font-family: 'ApfelGrotezkBold';
+  src: local('Apfel Grotezk Bold'), url('ApfelGrotezk-Fett.woff2');
+}
 
 /* Canvas required*/
 #canvas {
@@ -16,12 +24,104 @@
   height: 100%;
 }
 
+#nav {
+  position: absolute;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 3px solid black;
+  height: 64px;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #f5e663;
+}
+
+#home {
+  font-family: 'ApfelGrotezkBold';
+  font-size: 24px;
+  height: 100%;
+  padding: 0 20px;
+  background-color: white;
+  border: 3px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+  height: 100%;
+  border: 3px solid black;
+  background-color: white;
+}
+
+.social-icon {
+  width: 24px;
+}
+
+#hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 998;
+  /* backdrop-filter: blur(50px); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hero {
+  background-color: white;
+  border: 3px solid black;
+  font-family: 'ApfelGrotezk';
+  padding: 16px 64px;
+  line-height: 0.8;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 64px;
+  margin-top: 256px;
+  max-width: 960px;
+}
+
+#main-container {
+  border: 3px solid black;
+  background-color: #84bcda;
+  width: 100vw;
+  height: 300px;
+}
+
+#header-img {
+  width: 160px;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: 100;
+  margin-bottom: 18px;
+}
+
+h2 {
+  margin-top: 18px;
+  font-size: 48px;
+  line-height: 48px;
+}
+
 /* UI STUFF*/
 
 :root {
-  font-family: sofia-pro, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, "Open Sans", Arial, sans-serif;
-
+  font-family: sofia-pro, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, 'Open Sans', Arial, sans-serif;
 }
 
 body {
@@ -53,12 +153,12 @@ html {
   text-transform: uppercase;
 }
 .ui-title {
-  font-family: thunder2, "Thunder2", thunder, sofia-pro, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, "Open Sans", Arial, sans-serif;
+  font-family: thunder2, 'Thunder2', thunder, sofia-pro, -apple-system,
+    BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Open Sans', Arial, sans-serif;
   font-size: 4rem;
   font-weight: 800;
   line-height: 0.8;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 
   margin-bottom: 0 !important;
   width: 100% !important;

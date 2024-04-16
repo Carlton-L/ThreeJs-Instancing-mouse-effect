@@ -1,13 +1,43 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0,  maximum-scale=1.0, user-scalable=no" >
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0,  maximum-scale=1.0, user-scalable=no"
+    />
     <title>Offscreen Canvas DEMO</title>
   </head>
   <body>
-    <div id="canvas-wrapper"><canvas id="canvas"></canvas></div>
-    <script type="module"  src="./demo.js"></script>
+    <div id="canvas-wrapper">
+      <canvas id="canvas"></canvas>
+      <div id="nav">
+        <div id="home">Carlton Lindsay</div>
+        <div id="social">
+          <img src="./linkedin.svg" alt="linkedIn logo" class="social-icon" />
+        </div>
+      </div>
+      <header id="hero-container">
+        <div id="hero">
+          <div id="heading-container">
+            <h1>Hi, I'm Carlton,</h1>
+            <h2>
+              a UX/UI Designer <br />
+              living in Barcelona, Spain
+            </h2>
+          </div>
+          <div>
+            <img
+              id="header-img"
+              src="https://camo.githubusercontent.com/0c732027af8a28d138e3698181f7be7c9b97d443b4beb9c7ce8ec4cffc6b4767/68747470733a2f2f6d656469612e67697068792e636f6d2f6d656469612f6876524a434c467a6361737252346961377a2f67697068792e676966"
+              alt="waving hand"
+            />
+          </div>
+        </div>
+        <main id="main-container"></main>
+      </header>
+    </div>
+    <script type="module" src="./demo.js"></script>
   </body>
 </html>
